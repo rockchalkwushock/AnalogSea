@@ -1,0 +1,57 @@
+/* ---------- Page CSS ---------- */
+
+body
+{
+	background-color: DodgerBlue;
+}
+
+.row
+{
+	margin-right: auto;
+	margin-left: auto;
+}
+.box
+{
+	width: 400px;
+	height: 500px;
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	margin-bottom: 300px;
+	padding-right: 40px;
+	padding-left: 40px;
+
+}
+
+.logo_img
+{
+	height: 75px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.login
+{
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+}
+
+
+.login a
+{
+	color: white;
+}
+
+.login a:hover
+{
+	color: green;
+}
+
+.login a:visited
+{
+	color: purple;
+}
+/* ---------- Form CSS ---------- */
