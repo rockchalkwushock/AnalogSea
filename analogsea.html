@@ -1,73 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AnalogSea</title>
+	<title>Analog Sea</title>
 	<meta name="description" content="Welcome to AnalogSea, the revolutionary cloud computing company ready to store your data!">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<!-- CSS Reset -->
 	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Main.css -->
-    <link rel="stylesheet" type="text/css" href="analogsea_main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-
 	<main>
-
 		<div class="container-fluid">
-
-			<div class="row">
-
-				<div class="logo">
-				
-					<img src="logo.png" class="logo_img">
-
-				</div>
-
+			<div id="logo" class="row1">
+				<img src="logo.png" class="logo_img" alt="Analog Sea">
 			</div>
-			
-			<div class="row">
-				
+			<div id="SignupForm" class="row2">
 				<div class="box">
-
-					<form class="demo-form" action="/signup/" method="post"> 
-
+					<form class="demo-form" action="/signup/" method="post">
 						<h1>Sign up</h1>
-
 						<fieldset name="signup">
-
 							<label for="email">Email</label>
-							<input type="email" name="email" id="email" placeholder="abc@xyz.com">
-
+							<div class="email">
+								<input type="email" name="email" id="email" placeholder="foo@bar.com">
+							</div>
 							<label for="password">Password</label>
-							<input type="password" name="password" id="password" placeholder="password">
-							
+							<div class="password">
+								<input type="password" name="password" id="password" placeholder="1234passw0rd">
+							</div>
+							<button> Sign up </button>
 						</fieldset>
-						
 					</form>
-
+					<form action="/forgot-password/new" method="post">
+						<div class="forgotPassword">
+							<a href="#">Forgot password?</a>
+						</div>
+					</form>	
 				</div>
-
 			</div>
-
-			<div class="row">
-				
-				<div class="login">
-					
-					<p>Already have an account? <a href="#">Log In</a></p>
-				
+			<form action="/login" method="post">
+				<div id="LoginLink" class="login">
+					<p>Already have an account? <a href="#">Log in</a></p>
 				</div>
+			</form>
 			
-			</div>
-
-		</div>		
-
+		</div>
 	</main>
-
 </body>
 </html>
