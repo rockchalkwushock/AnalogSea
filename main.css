@@ -8,11 +8,6 @@
 	6) Forgot Password Link
 	7) Login Link
 
-
-	### Unresolved Issues ###
-
-	1) Cannot get CSS applied correctly to the "Sign Up" button.
-
 */
 
 
@@ -23,6 +18,7 @@ body
 {
 	background-color: DodgerBlue;
 	margin: 0px;
+	padding: 0px;
 	font-family: Helvetica;
 }
 
@@ -32,10 +28,10 @@ body
 {
 	height: 75px;
 	display: block;
+	width: auto;
+	padding-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
 }
 
 /* ---------- Form Content ------------ */
@@ -44,13 +40,14 @@ body
 {
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-bottom: 15px;
 	width: 400px;
 	height: 500px;
 	background-color: white;
 	padding-right: 40px;
 	padding-left: 40px;
+	border-radius: 5px;
 }
 
 .demo-form
@@ -62,21 +59,17 @@ body
 .demo-form h1
 {
 	text-align: center;
-	padding-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 30px;
+	margin-bottom: 30px;
 }
 
 /* ---------- Input Content ------------ */
-
-.email label
-{
-
-}
 
 .email input
 {
 	width: 320px;
 	border: 2px solid lightgrey;
+	border-radius: 5px;
 	background-color: whitesmoke;
 	padding: 15px;
 	margin-top: 15px;
@@ -84,33 +77,38 @@ body
 	font-size: 20px;
 }
 
-.password label
-{
-
-}
-
 .password input
 {
 	width: 320px;
 	border: 2px solid lightgrey;
+	border-radius: 5px;
 	background-color: whitesmoke;
 	padding: 15px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	font-size: 20px;
 }
+
+label
+{
+	font-size: 17px;
 }
 
 /* ---------- Button ------------ */
 
-button
+.button
 {
 	width: 320px;
-	height: 90px;
-	border: 2px;
-	background-color: green;
+	height: 55px;
+	border: 2px green;
+	border-radius: 5px;
+	background-color: #54C571;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: white;
 }
-
 
 /* ---------- Forgot Password Link ------------ */
 
@@ -141,15 +139,4 @@ button
 	text-decoration: underline;
 	color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
 

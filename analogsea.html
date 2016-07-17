@@ -15,10 +15,14 @@
 <body>
 	<main>
 		<div class="container-fluid">
-			<div id="logo" class="row1">
+
+		<!-- Logo Code -->
+			<div class="row1">
 				<img src="logo.png" class="logo_img" alt="Analog Sea">
 			</div>
-			<div id="SignupForm" class="row2">
+
+		<!-- Form Code -->
+			<div class="row2">
 				<div class="box">
 					<form class="demo-form" action="/signup/" method="post">
 						<h1>Sign up</h1>
@@ -31,22 +35,19 @@
 							<div class="password">
 								<input type="password" name="password" id="password" placeholder="1234passw0rd">
 							</div>
-							<button> Sign up </button>
+							<button class="button"> Sign up </button>
 						</fieldset>
 					</form>
-					<form action="/forgot-password/new" method="post">
-						<div class="forgotPassword">
-							<a href="#">Forgot password?</a>
-						</div>
-					</form>	
+					<div class="forgotPassword">
+						<a href="/forgot-password/new">Forgot password?</a>
+					</div>
 				</div>
 			</div>
-			<form action="/login" method="post">
-				<div id="LoginLink" class="login">
-					<p>Already have an account? <a href="#">Log in</a></p>
+
+			<!-- Login Link -->
+				<div class="login">
+					<p>Already have an account? <a href="/login">Log in</a></p>
 				</div>
-			</form>
-			
 		</div>
 	</main>
 </body>
