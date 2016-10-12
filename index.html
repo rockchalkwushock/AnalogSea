@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Analog Sea</title>
+	<meta name="description" content="Welcome to AnalogSea, the revolutionary cloud computing company ready to store your data!">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<!-- CSS Reset -->
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Main.css -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<main>
+		<div class="container-fluid">
+
+		<!-- Logo Code -->
+			<div class="row1">
+				<img src="logo.png" class="logo_img" alt="Analog Sea">
+			</div>
+
+		<!-- Form Code -->
+			<div class="row2">
+				<div class="box">
+					<form class="demo-form" action="/signup/" method="post">
+						<h1>Sign up</h1>
+						<fieldset name="signup">
+							<label for="email">Email</label>
+							<div class="email">
+								<input type="email" name="email" id="email" placeholder="foo@bar.com">
+							</div>
+							<label for="password">Password</label>
+							<div class="password">
+								<input type="password" name="password" id="password" placeholder="1234passw0rd">
+							</div>
+							<button class="button"> Sign up </button>
+						</fieldset>
+					</form>
+					<div class="forgotPassword">
+						<a href="/forgot-password/new">Forgot password?</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Login Link -->
+				<div class="login">
+					<p>Already have an account? <a href="/login">Log in</a></p>
+				</div>
+		</div>
+	</main>
+</body>
+</html>
